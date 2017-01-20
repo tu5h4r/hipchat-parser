@@ -7,6 +7,8 @@ This is the code for the REST API implemented in C++ for the Atlassian problem f
 
 Another library that is used is called libcurl to fetch the HTML contents based on URL passed
  * An opensource/free and robust library with API details found at https://curl.haxx.se/libcurl/c/
+ * -lcurl needs to be added to the g++ linker comand. If an IDE is used, this can be added through 1 step process in project configs
+  * The linking stage command will look like this - g++  -o "HipChat"  ./src/HipChat.o ./src/jsoncpp.o   -lcurl
 
 
 The source include the main() function whose primary function is for Unit Tests.
