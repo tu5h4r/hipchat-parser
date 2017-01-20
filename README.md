@@ -13,6 +13,8 @@ The source include the main() function whose primary function is for Unit Tests.
 
 About the code
 ---------------
+* The code is src/HipChat.cpp
+* json.cpp and json/\* are the amalgamated files of JSONCPP library as mentioned above
 * Funtion ParseStringAPI::GetJSONMessage is the API call that takes the chat string and returns the JSON object. Each call to ParseStringAPI::GetJSONMessage resets the old JSON object and parses the new string afresh.
 * Returned JSON object has 3 nodes as - mentions (if exists), emoticons(if exists) and link (if its a valid URL whose HTML content can be fetched by CURL)
 * The time complexity of  ParseStringAPI::ParseInput is of the order of O(n)
